@@ -428,9 +428,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa80b6fd0ac63b4184c86e39bd26b46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textToDisplay: {fileID: 1345496040}
   canvas: {fileID: 1105422392863664818}
   read: 0
   doNotClose: 1
+  individualText: ASD
+  individualTitle: ASD
 --- !u!65 &86074922
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8772,6 +8775,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1345496040 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1105422392002591372, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+  m_PrefabInstance: {fileID: 1105422392863664816}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1363936795
 GameObject:
   m_ObjectHideFlags: 0
