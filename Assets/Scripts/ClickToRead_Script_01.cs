@@ -14,7 +14,7 @@ public class ClickToRead_Script_01 : MonoBehaviour
 
     void Start()
     {
-        textToDisplay.text = "Test\nText";
+        textToDisplay.text = "Mum seemed confused about why I wanted to keep the old\n dollhouse we found while cleaning out grandma’s home.\n\nOr really, she seemed confused about the dollhouse itself,\n like it was something she’d never seen before & didn’t understand.\n\nThe dollhouse was old but had been kept safely hidden away\n & covered with a dusty sheet, like grandma didn’t want\n it to get lost or broken but didn’t want to look at it either.";
         read = true;
         doNotClose = false;
     }
