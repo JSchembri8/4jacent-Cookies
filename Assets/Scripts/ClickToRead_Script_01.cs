@@ -10,6 +10,7 @@ public class ClickToRead_Script_01 : MonoBehaviour
     public bool read = false;
     public bool doNotClose = true;
     public string individualText;
+    public string individualText2;
     public string individualTitle;
 
     void Start()
@@ -40,7 +41,7 @@ public class ClickToRead_Script_01 : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             read = true;
-            textToDisplay.text = individualTitle + "\n" + individualText;
+            textToDisplay.text = individualTitle + "\n" + "\n" + individualText + "\n" + individualText2;
         }
 
     }
