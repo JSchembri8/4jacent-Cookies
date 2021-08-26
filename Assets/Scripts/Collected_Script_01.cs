@@ -9,12 +9,10 @@ public class Collected_Script_01 : MonoBehaviour
 
     void OnMouseOver()
     {
-        Debug.Log("MOUSEOVER");
         if (Input.GetMouseButtonDown(0))
         {
 
             collectedStatus = true;
-            Debug.Log("Collected" + collectedStatus);
             gameObject.GetComponent<Renderer>().enabled = false;
         }
     }

@@ -21,7 +21,6 @@ public class LockedDoor_Script_02 : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && readyToOpen == true)
         {
             gameObject.SetActive(false);
-            Debug.Log("DELETING");
         }
     }
 }

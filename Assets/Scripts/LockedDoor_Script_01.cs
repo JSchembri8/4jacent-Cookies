@@ -15,7 +15,6 @@ public class LockedDoor_Script_01 : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-        Debug.Log(keysCollected);
         keysCollected = AllKeysCollected();
     }
 
