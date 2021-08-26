@@ -15,6 +15,7 @@ public class Collected_Script_01 : MonoBehaviour
 
             collectedStatus = true;
             Debug.Log("Collected" + collectedStatus);
+            gameObject.GetComponent<Renderer>().enabled = false;
         }
     }
 }

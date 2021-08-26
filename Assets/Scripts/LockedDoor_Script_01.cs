@@ -6,6 +6,7 @@ public class LockedDoor_Script_01 : MonoBehaviour
 {
     public GameObject[] keyItems;
     public bool keysCollected = false;
+    public GameObject keyObject;
   
 
     void Update()
@@ -29,4 +30,5 @@ public class LockedDoor_Script_01 : MonoBehaviour
         }
         return true;
     }
+    
 }
