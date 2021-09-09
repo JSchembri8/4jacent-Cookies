@@ -7,12 +7,26 @@ public class AnimationOnClick_Script_01 : MonoBehaviour
     Animator anim;
     public bool twoStates;
     public bool isOpen = false; // Preparing for two-state animations
+    public bool isCoroutineExecuting = false;
+    public bool canFade = false;
+    private Color alphaColor;
+    private float timeToFade = 1.0f;
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        canFade = false;
+        alphaColor = gameObject.GetComponent<Renderer>().material.color;
+        alphaColor.a = 0;
     }
 
+    void Update()
+    {
+        if (canFade)
+        {
+            gameObject.GetComponent<Renderer>().material.color = Color.Lerp(gameObject.GetComponent<Renderer>().material.color, alphaColor, timeToFade * Time.deltaTime);
+        }
+    }
     // Update is called once per frame
     void OnMouseOver() 
     {
@@ -21,7 +35,19 @@ public class AnimationOnClick_Script_01 : MonoBehaviour
         {
             Debug.Log("Opening");
             anim.SetTrigger("Active");
+            StartCoroutine(ExecuteAfterTime(2f));
         }
        
+    }
+
+    IEnumerator ExecuteAfterTime(float time)
+    {
+        if (isCoroutineExecuting)
+            yield break;
+
+        isCoroutineExecuting = true;
+        yield return new WaitForSeconds(time);
+        canFade = true;
+        isCoroutineExecuting = false;
     }
 }

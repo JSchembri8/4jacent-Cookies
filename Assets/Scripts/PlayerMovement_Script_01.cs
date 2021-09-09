@@ -28,21 +28,7 @@ public class PlayerMovement_Script_01 : MonoBehaviour
         direction.z = hInput * speed;
         controller.Move(direction * Time.deltaTime);
 
-        // Is player on the floor?
-        groundedPlayer = controller.isGrounded;
-        if (groundedPlayer && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0f;
-        }
-
-        // Vertical Movement (Jump)
-        if (Input.GetButtonDown("Jump") && groundedPlayer)
-        {
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        }
-
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
+        
 
     }
 }
