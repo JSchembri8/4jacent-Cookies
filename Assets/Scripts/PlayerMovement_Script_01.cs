@@ -28,7 +28,11 @@ public class PlayerMovement_Script_01 : MonoBehaviour
         direction.z = hInput * speed;
         controller.Move(direction * Time.deltaTime);
 
-        
+        // Quit Game
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
 
     }
 }
