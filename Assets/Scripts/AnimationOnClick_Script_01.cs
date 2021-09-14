@@ -11,6 +11,7 @@ public class AnimationOnClick_Script_01 : MonoBehaviour
     public bool canFade = false;
     private Color alphaColor;
     private float timeToFade = 1.0f;
+    Collider m_Collider;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class AnimationOnClick_Script_01 : MonoBehaviour
         canFade = false;
         alphaColor = gameObject.GetComponent<Renderer>().material.color;
         alphaColor.a = 0;
+        m_Collider = GetComponent<Collider>();
     }
 
     void Update()
@@ -46,6 +48,9 @@ public class AnimationOnClick_Script_01 : MonoBehaviour
             yield break;
 
         isCoroutineExecuting = true;
+        m_Collider.enabled = false;
+
+
         yield return new WaitForSeconds(time);
         canFade = true;
         isCoroutineExecuting = false;
