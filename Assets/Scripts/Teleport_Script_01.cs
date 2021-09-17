@@ -16,6 +16,7 @@ public class Teleport_Script_01 : MonoBehaviour
     public bool isFaded = false;
     public bool isFading = false;
  
+
     void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0))
@@ -24,7 +25,7 @@ public class Teleport_Script_01 : MonoBehaviour
             {
                 isFading = true;
                 StartCoroutine(FadeToBlack());
-                StartCoroutine(Teleport(0.5f));
+                StartCoroutine(Teleport(0.8f));
             }
            
         }
@@ -76,28 +77,16 @@ public class Teleport_Script_01 : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         Debug.Log("Clicking");
-            if (isUp && hasTeleported == false)
-            {
-                player.GetComponent<PlayerMovement_Script_01>().enabled = false;
-                player.transform.position = referenceTwo.transform.position;
-                isUp = false;
-                hasTeleported = true;
-                Debug.Log("TELEPORTING DOWN");
-                StartCoroutine(ExecuteAfterTime(0.2f));
-                StartCoroutine(FadeToBlack(false));
-                isFading = false;
+        if (hasTeleported == false)
+        {
+            player.GetComponent<PlayerMovement_Script_01>().enabled = false;
+            player.transform.position = referenceTwo.transform.position;
+            isUp = false;
+            hasTeleported = true;
+            Debug.Log("TELEPORTING DOWN");
+            StartCoroutine(ExecuteAfterTime(0.2f));
+            StartCoroutine(FadeToBlack(false));
+            isFading = false;
         }
-            if (!isUp && hasTeleported == false)
-            {
-                player.GetComponent<PlayerMovement_Script_01>().enabled = false;
-                player.transform.position = referenceOne.transform.position;
-                isUp = true;
-                hasTeleported = true;
-                Debug.Log("TELEPORTING UP");
-                StartCoroutine(ExecuteAfterTime(0.2f));
-                StartCoroutine(FadeToBlack(false));
-                isFading = false;
-        }
-        }
-    
+    }
 }
