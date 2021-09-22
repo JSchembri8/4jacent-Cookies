@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimationOnClick_Script_01 : MonoBehaviour
 {
     Animator anim;
+    Animator anim2;
     public bool twoStates;
     public bool isOpen = false; // Preparing for two-state animations
     public bool isCoroutineExecuting = false;

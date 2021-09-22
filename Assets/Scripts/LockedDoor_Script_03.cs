@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LockedDoor_Script_01 : MonoBehaviour
+public class LockedDoor_Script_03 : MonoBehaviour
 {
     public GameObject[] keyItems;
     public bool keysCollected = false;
@@ -21,7 +21,7 @@ public class LockedDoor_Script_01 : MonoBehaviour
     {
         for (int g = 0; g < keyItems.Length; g++)
         {
-            if (keyItems[g].GetComponent<Collected_Script_01>().collectedStatus == false)
+            if (keyItems[g].GetComponent<LightColour_Script_1>().collectedStatus == false)
             {
                 return false;
             }
