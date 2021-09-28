@@ -14,13 +14,13 @@ public class VanessaWalk_Script_01 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey("a"))
+        if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
         {
             vanessaWalk.transform.rotation = Quaternion.Euler(0,180,0);
             vanessaIdle.GetComponent<Renderer>().enabled = false;
             vanessaWalk.SetActive(true);
         }
-        else if (Input.GetKey("d"))
+        else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
         {
             vanessaWalk.transform.rotation = Quaternion.Euler(0, 0, 0);
             vanessaIdle.GetComponent<Renderer>().enabled = false;
