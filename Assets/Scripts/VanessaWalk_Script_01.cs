@@ -7,8 +7,6 @@ public class VanessaWalk_Script_01 : MonoBehaviour
     public GameObject vanessaIdle;
     public GameObject vanessaWalk;
     public bool isWalking = false;
-    public Vector3 faceLeft; 
-    public Vector3 faceRight;
 
     void Start()
     {
@@ -19,19 +17,19 @@ public class VanessaWalk_Script_01 : MonoBehaviour
         if (Input.GetKey("a"))
         {
             vanessaWalk.transform.rotation = Quaternion.Euler(0,180,0);
-            vanessaIdle.GetComponent<Renderer>().enabled = false;
+            //vanessaIdle.GetComponent<Renderer>().enabled = false;
             vanessaWalk.SetActive(true);
         }
         else if (Input.GetKey("d"))
         {
             vanessaWalk.transform.rotation = Quaternion.Euler(0, 0, 0);
-            vanessaIdle.GetComponent<Renderer>().enabled = false;
+            //vanessaIdle.GetComponent<Renderer>().enabled = false;
             vanessaWalk.SetActive(true);
         }
         else
         {
             vanessaWalk.SetActive(false);
-            vanessaIdle.GetComponent<Renderer>().enabled = true;
+            //vanessaIdle.GetComponent<Renderer>().enabled = true;
         }
     }
 
