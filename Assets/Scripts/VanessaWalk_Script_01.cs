@@ -17,19 +17,19 @@ public class VanessaWalk_Script_01 : MonoBehaviour
         if (Input.GetKey("a"))
         {
             vanessaWalk.transform.rotation = Quaternion.Euler(0,180,0);
-            //vanessaIdle.GetComponent<Renderer>().enabled = false;
-            //vanessaWalk.SetActive(true);
+            vanessaIdle.GetComponent<Renderer>().enabled = false;
+            vanessaWalk.SetActive(true);
         }
         else if (Input.GetKey("d"))
         {
             vanessaWalk.transform.rotation = Quaternion.Euler(0, 0, 0);
-            //vanessaIdle.GetComponent<Renderer>().enabled = false;
-            //vanessaWalk.SetActive(true);
+            vanessaIdle.GetComponent<Renderer>().enabled = false;
+            vanessaWalk.SetActive(true);
         }
         else
         {
-            //vanessaWalk.SetActive(false);
-            //vanessaIdle.GetComponent<Renderer>().enabled = true;
+            vanessaWalk.SetActive(false);
+            vanessaIdle.GetComponent<Renderer>().enabled = true;
         }
     }
 
