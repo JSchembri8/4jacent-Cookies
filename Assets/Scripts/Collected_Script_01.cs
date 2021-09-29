@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Collected_Script_01 : MonoBehaviour
 {
     public bool collectedStatus = false;
+    public GameObject[] objectsToDelete;
+    public bool additionalObjects = false;
 
     void OnMouseOver()
     {
@@ -14,6 +16,13 @@ public class Collected_Script_01 : MonoBehaviour
 
             collectedStatus = true;
             gameObject.GetComponent<Renderer>().enabled = false;
+            if (additionalObjects)
+            {
+                foreach(GameObject obja in objectsToDelete)
+                {
+                    obja.SetActive(false);
+                }
+            }
         }
     }
 }
