@@ -14141,6 +14141,8 @@ MonoBehaviour:
   moveTo: {x: 0, y: 0, z: 0}
   startPos: {x: 0, y: 0, z: 0}
   catPaw: {fileID: 226999052}
+  catPaw2: {fileID: 157451791}
+  catPaw3: {fileID: 1498836643}
   isCoroutineExecuting: 0
 --- !u!1 &977367900
 GameObject:
@@ -20323,6 +20325,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2303340535777696479, guid: e877ffaa7d6434d4e84296fdba46bf6e, type: 3}
+--- !u!1 &1498836643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4961812207050635476, guid: 280a0d5b66f1b5b45803b3e4889bd8ca, type: 3}
+  m_PrefabInstance: {fileID: 1465653037}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1558346140
 GameObject:
   m_ObjectHideFlags: 0

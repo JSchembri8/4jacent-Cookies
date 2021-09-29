@@ -9,6 +9,8 @@ public class MouseScareCat_Script_01 : MonoBehaviour
     public Vector3 moveTo;
     public Vector3 startPos;
     public GameObject catPaw;
+    public GameObject catPaw2;
+    public GameObject catPaw3;
     public bool isCoroutineExecuting = false;
 
     void Start()
@@ -43,6 +45,8 @@ public class MouseScareCat_Script_01 : MonoBehaviour
         yield return new WaitForSeconds(time);
         catPaw.GetComponent<Renderer>().enabled = false;
         catPaw.GetComponent<Collider>().enabled = false;
+        catPaw2.GetComponent<Collider>().enabled = false;
+        catPaw3.SetActive(false);
         isCoroutineExecuting = false;
     }
 }
