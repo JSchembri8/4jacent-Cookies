@@ -16,7 +16,7 @@ public class LightColour_Script_1 : MonoBehaviour
         lightColor = light.GetComponent<Light>();
         colours[0] = Color.white;
         colours[1] = Color.blue;
-        colours[2] = Color.red;
+        colours[2] = Color.yellow;
         colours[3] = Color.green;
     }
     void Update()

@@ -3865,7 +3865,7 @@ MonoBehaviour:
   canvas: {fileID: 1363936795}
   isOff: 1
   doNotClose: 0
-  individualText: -Raspberries -Blueberries -Granny Smiths
+  individualText: -Bananas -Blueberries -Granny Smiths
   individualText2: Australia, 1947.
   individualTitle: Can't wait for the harvesting of my favourite fruits!
   active: 0
