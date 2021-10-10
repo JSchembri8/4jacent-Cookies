@@ -3831,7 +3831,6 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: a117fe631f1f4244899064378be00687, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 4e8d8f3b0d9a96e4aa503728b896c2c4, type: 2}
   - {fileID: 7400000, guid: a117fe631f1f4244899064378be00687, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -10882,7 +10881,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29694
+  m_Name: pb_Mesh127368
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24585,7 +24584,6 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: fb382d569bfe372429a1e088819eb773, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 4e8d8f3b0d9a96e4aa503728b896c2c4, type: 2}
   - {fileID: 7400000, guid: fb382d569bfe372429a1e088819eb773, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -26325,7 +26323,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29124
+  m_Name: pb_Mesh126032
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28365,7 +28363,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29734
+  m_Name: pb_Mesh127408
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29785,6 +29783,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 301546118810512781, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1024
+      objectReference: {fileID: 0}
+    - target: {fileID: 301546118810512781, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 672
+      objectReference: {fileID: 0}
+    - target: {fileID: 301546118810512781, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 301546118810512781, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320464731198563519, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 320464731198563519, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 81d4ec5eaa10f7b4c84a8f9293dde663, type: 3}
+    - target: {fileID: 320464731198563519, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 320464731198563519, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 320464731198563519, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 320464731198563519, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 677404902886788654, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -29869,6 +29907,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1105422392002591371, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 650
+      objectReference: {fileID: 0}
     - target: {fileID: 1105422392002591372, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
       propertyPath: m_Text
       value: '- Tattered Note -
@@ -29882,6 +29924,18 @@ PrefabInstance:
         Font will be changed later'
       objectReference: {fileID: 0}
     - target: {fileID: 1105422392002591372, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_Color.b
+      value: 0.1792453
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105422392002591372, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.1792453
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105422392002591372, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.1792453
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105422392002591372, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: f2ed870307981f6448333c891b3eb776, type: 3}
@@ -29892,6 +29946,10 @@ PrefabInstance:
     - target: {fileID: 1105422392002591372, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1105422392002591372, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6650c61c595014443ac57d0ea1fa2dbc, type: 3}
