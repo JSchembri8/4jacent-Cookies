@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement_Script_01 : MonoBehaviour
 {
@@ -32,6 +33,10 @@ public class PlayerMovement_Script_01 : MonoBehaviour
         if (Input.GetKey("escape"))
         {
             Application.Quit();
+        }
+        if (Input.GetKey("r"))
+        {
+            SceneManager.LoadScene("Greybox_12Aug_v1");
         }
 
     }

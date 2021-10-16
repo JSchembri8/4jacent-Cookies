@@ -10068,6 +10068,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMaterial: {fileID: 2100000, guid: bd269088a4179634b82d964c232bdc13, type: 2}
+--- !u!95 &463841667
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463841661}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 05d419a85ca1b7e498e2c917db142c8e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &467102184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10587,6 +10606,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMaterial: {fileID: 2100000, guid: 6eaf4f2500728594f9932ec0e24a66d9, type: 2}
+--- !u!95 &502790849
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502790843}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d95d1f86af3e9614589177364fc16a0b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &522857355
 GameObject:
   m_ObjectHideFlags: 0
@@ -12710,6 +12748,10 @@ PrefabInstance:
       value: -270
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: ddb20b40e1e620c44a3593106a248ac6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ddb20b40e1e620c44a3593106a248ac6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6eaf4f2500728594f9932ec0e24a66d9, type: 2}
@@ -13708,6 +13750,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectMaterial: {fileID: 2100000, guid: 6eaf4f2500728594f9932ec0e24a66d9, type: 2}
+--- !u!95 &821701080
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821701074}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d95d1f86af3e9614589177364fc16a0b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &827299381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15359,6 +15420,9 @@ MonoBehaviour:
   catPaw: {fileID: 919132148455922124}
   catPaw2: {fileID: 1162317435}
   catPaw3: {fileID: 1498836643}
+  windUp: {fileID: 463841661}
+  wheelOne: {fileID: 821701074}
+  wheelTwo: {fileID: 502790843}
   isCoroutineExecuting: 0
 --- !u!1 &977367900
 GameObject:

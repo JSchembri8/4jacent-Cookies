@@ -11,6 +11,9 @@ public class MouseScareCat_Script_01 : MonoBehaviour
     public GameObject catPaw;
     public GameObject catPaw2;
     public GameObject catPaw3;
+    public GameObject windUp;
+    public GameObject wheelOne;
+    public GameObject wheelTwo;
     public bool isCoroutineExecuting = false;
 
     void Start()
@@ -31,6 +34,9 @@ public class MouseScareCat_Script_01 : MonoBehaviour
         {
             startMoving = true;
             StartCoroutine(ExecuteAfterTime(8f));
+            windUp.GetComponent<Animator>().enabled = true;
+            wheelOne.GetComponent<Animator>().enabled = true;
+            wheelTwo.GetComponent<Animator>().enabled = true;
         }
     }
 
