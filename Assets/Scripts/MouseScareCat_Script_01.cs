@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class MouseScareCat_Script_01 : MonoBehaviour
     public GameObject wheelOne;
     public GameObject wheelTwo;
     public bool isCoroutineExecuting = false;
+    public AudioSource ObjectSound;
 
     void Start()
     {
@@ -52,6 +54,7 @@ public class MouseScareCat_Script_01 : MonoBehaviour
         catPaw.SetActive(false);
         catPaw2.GetComponent<Collider>().enabled = false;
         catPaw3.SetActive(false);
+        ObjectSound.Play();
         isCoroutineExecuting = false;
     }
 }
